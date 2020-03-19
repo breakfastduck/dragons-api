@@ -33,6 +33,11 @@ const weaponSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         required: true,
         ref: 'User'
+    },
+    assignedChar: {
+        type: mongoose.Schema.Types.ObjectId,
+        required: true,
+        ref: 'Character'
     }
 })
 
