@@ -15,6 +15,11 @@ const notesSchema = new mongoose.Schema({
         type: Boolean,
         required: true,
         default: true
+    },
+    assignedChar: {
+        type: mongoose.Schema.Types.ObjectId,
+        required: true,
+        ref: 'Character'
     }
 }, {
     timestamps: true
